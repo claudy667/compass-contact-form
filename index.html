@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compass — Contact a Tutor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <section class="info-panel">
+    <div class="logo">
+      <span class="logo-mark">C</span>
+      <span class="logo-word">Compass</span>
+    </div>
+
+    <h1>Get matched with a tutor</h1>
+    <p class="lede">
+      Tell us what course you're stuck on and what you're hoping to get out of a session.
+      A tutor from your department usually replies within a day.
+    </p>
+
+    <ul class="facts">
+      <li><strong>24 hrs</strong><span>average reply time</span></li>
+      <li><strong>120+</strong><span>tutors across departments</span></li>
+      <li><strong>Free</strong><span>for KNUST students</span></li>
+    </ul>
+  </section>
+
+  <section class="form-panel">
+    <form id="contactForm" novalidate>
+
+      <div class="field">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. Ama Serwaa" autocomplete="name">
+        <span class="error" id="fullNameError"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@knust.edu.gh" autocomplete="email">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="field">
+        <label for="subject">Course or subject</label>
+        <input type="text" id="subject" name="subject" placeholder="e.g. CSM 352 — Computer Graphics">
+        <span class="error" id="subjectError"></span>
+      </div>
+
+      <div class="field">
+        <label for="message">What do you need help with?</label>
+        <textarea id="message" name="message" rows="5" placeholder="Give a bit of context so a tutor can prepare..."></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="submit-btn">Send request</button>
+
+      <p class="success-msg" id="successMsg" role="status">
+        Request sent — a tutor will reach out to your email soon.
+      </p>
+    </form>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
